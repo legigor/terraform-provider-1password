@@ -59,7 +59,7 @@ func Provider() terraform.ResourceProvider {
 			"onepassword_item_secure_note":      resourceItemSecureNote(),
 			"onepassword_item_document":         resourceItemDocument(),
 			"onepassword_item_login":            resourceItemLogin(),
-			"onepassword_user":            		 resourceUser(),
+			"onepassword_user":                  resourceUser(),
 			"onepassword_vault":                 resourceVault(),
 		},
 		DataSourcesMap: map[string]*schema.Resource{

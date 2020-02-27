@@ -45,9 +45,8 @@ func resourceUserRead(d *schema.ResourceData, meta interface{}) error {
 func resourceUserCreate(d *schema.ResourceData, meta interface{}) error {
 	m := meta.(*Meta)
 	_, err := m.onePassClient.CreateUser(&User{
-		Name: d.Get("name").(string),
+		Name:  d.Get("name").(string),
 		Email: d.Get("email").(string),
-
 	})
 	if err != nil {
 		return err
